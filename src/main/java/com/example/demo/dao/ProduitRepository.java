@@ -1,5 +1,6 @@
 package com.example.demo.dao;
 import java.util.List;
+//Projet simple pour acceder sur DB
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
