@@ -5,14 +5,14 @@
             <button class="btn btn-primary" (click)="onGetProduct()">Produits</button>
         </div>
         <div class="panel-body">
-            <table *ngIF="produits" class="table table-striped">
+            <table *ngIf="produits" class="table table-striped">
                 <tr>
                     <th>ID</th>  <th>DES</th>   <th>PRIX</th>  <th>QTE</th>
                 </tr>
                 <tr *ngFor="let p of produits._embedded.produits">
                     <td>{{p.id}}</td>
                     <td>{{p.desiganation}}</td>
-                    <td>{{p.price}}</td>
+                    <td>{{p.price|number:'0.02'}}</td>
                     <td>{{p.quantite}}</td>
                 </tr>
             </table>
